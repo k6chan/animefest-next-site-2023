@@ -33,7 +33,7 @@ are welcome!
 ## Pushing code
 
 The default branch is ```main```; when your changes are ready you can update the ````production```` branch (what
-actually goes to [animefest.ucsd.moe](https://animefest.ucsd.moe)) with the command `git push origin main:production`.
+actually goes to [animefest.ucsd.moe](https://k6chan.github.io/animefest-next-site-2023/)) with the command `git push origin main:production`.
 The site will be successfully updated if the build completes in the GitHub Actions tab.
 
 Before pushing code, run `git pull` to avoid merge conflicts.
@@ -41,7 +41,7 @@ Before pushing code, run `git pull` to avoid merge conflicts.
 ## BasePath
 
 During development, the project was served on the
-subdomain [ucsdanimeclub.github.io/animefest-next-site/](https://ucsdanimeclub.github.io/animefest-next-site/). By
+subdomain [ucsdanimeclub.github.io/animefest-next-site/](https://k6chan.github.io/animefest-next-site-2023/). By
 default Next.js is not meant to be deployed on the sub-path of a domain, so `next.config.js` is edited to resolve this
 issue by applying path prefixes when necessary. The `<MyImage>` tag is also created to resolve the issue when loading
 image sources, so please use it instead of `<img>` or `<Image>` tags.
@@ -85,7 +85,7 @@ This project also contains the HTML `<head>` tag in this file.
 
 #### index.js
 
-This page is the default page that loads when visiting [animefest.ucsd.moe](https://animefest.ucsd.moe).
+This page is the default page that loads when visiting [animefest.ucsd.moe](https://k6chan.github.io/animefest-next-site-2023/).
 
 ### Components
 
@@ -209,8 +209,8 @@ importing Bootstrap.
 
 ### next.config.js
 
-Mainly used to adjust the basePath when the website is served on a subdomain (i.e. [ucsdanimeclub.github.io/animefest-next-site/](https://ucsdanimeclub.github.io/animefest-next-site/)) instead
-of [animefest.ucsd.moe](https://animefest.ucsd.moe).
+Mainly used to adjust the basePath when the website is served on a subdomain (i.e. [ucsdanimeclub.github.io/animefest-next-site/](https://k6chan.github.io/animefest-next-site-2023/)) instead
+of [animefest.ucsd.moe](https://k6chan.github.io/animefest-next-site-2023/).
 
 ### CNAME
 
